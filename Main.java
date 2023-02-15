@@ -6,8 +6,8 @@ public class Main{
 
     public static int[][] microwaveTimer(int[] startState){
         int[][] output = new int[startState[0] * 60 + startState[1] + 1][2];
-        output[0] = startState;
-        for(int i = 1; i > output.length + 1; i++){ // we start at 1 since we defined 0 already
+        output[0] = startState; // start state is outputed and used in calculation
+        for(int i = 1; i > output.length; i++){ // we start at 1 since we defined 0 already
             if(output[i-1][1] > 0){ // base case, where we count 1 second down
                 output[i][1] = output[i-1][1] - 1;
             }
