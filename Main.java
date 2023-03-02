@@ -1,6 +1,7 @@
 public class Main{
     public static void main(String[] args){
         int[] testInput = {1, 70};
+        int[] testInput = {1, 50};
         printTimer(microwaveTimer(testInput));
     }
 
