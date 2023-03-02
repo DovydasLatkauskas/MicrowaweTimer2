@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args){
-        int[] testInput = {1, 80};
+        int[] testInput = {1, 70};
         printTimer(microwaveTimer(testInput));
     }
 
@@ -12,7 +12,8 @@ public class Main{
                 output[i][1] = output[i-1][1] - 1;
                 output[i][0] = output[i-1][0]; // need to carry the minute counter over from [i-1] to [i]
             }
-            else if ((output [i-1][1] == 0)&&(output [i-1][0] > 0)){ // if there are no more seconds left but there are minutes
+            // if there are no more seconds left but there are minutes
+            else if ((output [i-1][1] == 0)&&(output [i-1][0] > 0)){
                 output[i][0] = output[i-1][0] - 1;
                 output[i][1] = 59;
             }
