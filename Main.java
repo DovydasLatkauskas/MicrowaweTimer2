@@ -1,7 +1,7 @@
 public class Main{
-    public static void main(String[] args){
-        int[] testInput = {1, 99};
-        printTimer(microwaveTimer(testInput));
+    public static void main(String[] args){ // the main method is just for testing and should be removed before deployment
+        int[] testInput = {1, 99}; // input just for testing
+        printTimer(microwaveTimer(testInput)); 
     }
 
     public static int[][] microwaveTimer(int[] startState){
