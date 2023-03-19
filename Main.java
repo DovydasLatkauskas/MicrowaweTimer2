@@ -14,8 +14,8 @@ public class Main{
             }
             // if there are no more seconds left but there are minutes
             else if ((output [i-1][1] == 0)&&(output [i-1][0] > 0)){
-                output[i][0] = output[i-1][0] - 1;
-                output[i][1] = 59;
+                output[i][0] = output[i-1][0] - 1; // removes  a minute from the timer
+                output[i][1] = 59; // sets the seconds to 59 (we count down 1 second)
             }
         }
         return output;
