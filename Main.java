@@ -3,6 +3,7 @@ public class Main{
         int[] testInput = {1, 99}; // input just for testing
         int[] testInput2 = {1, 101}; // input just for testing
         printTimer(microwaveTimer(testInput)); 
+        printTimer(microwaveTimer(testInput2)); 
     }
 
     public static int[][] microwaveTimer(int[] startState){
