@@ -1,6 +1,7 @@
 public class Main{
     public static void main(String[] args){ // the main method is just for testing and should be removed before deployment
         int[] testInput = {1, 99}; // input just for testing
+        int[] testInput2 = {1, 101}; // input just for testing
         printTimer(microwaveTimer(testInput)); 
     }
 
